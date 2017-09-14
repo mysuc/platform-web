@@ -1,0 +1,20 @@
+service:
+  UserService_selectById:
+    uri: com.neusoft.platform.system.service.UserService
+    method: selectById
+
+  UserService_insert:
+    uri: com.neusoft.platform.system.service.UserService
+    method: insert
+
+  UserService_login:
+    uri: com.neusoft.platform.system.service.UserService
+    method: login
+
+  FileService_download:
+    uri: com.neusoft.platform.system.service.FileService
+    method: download
+
+  FileService_upload:
+    uri: com.neusoft.platform.system.service.FileService
+    method: upload

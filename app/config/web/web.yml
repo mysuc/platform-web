@@ -1,0 +1,25 @@
+view:
+  index/{id}:
+    data:
+      - name: response1
+        service: UserService_selectById
+
+mapping:
+  api/selectById:
+    service: UserService_selectById
+  api/insert:
+    service: UserService_insert
+  api/image:
+    service: FileService_download
+  api/upload:
+    service: FileService_upload
+  api/login:
+    service: UserService_login
+
+welcome: index
+
+error:
+  500: error/500
+  404: error/404
+  noLogin: /file
+  noAuth: /file
